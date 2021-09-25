@@ -13,7 +13,7 @@ import java.util.List;
  */
 public class EmployeeCSVParser {
     //массив строк, содержащий информацию о предназначении колонок в CVS файле
-    public static final String[] COLUMN_MAPPING = {"id", "firstName", "lastName", "country", "age"}; 
+    public static final String[] COLUMN_MAPPING = {"id", "firstName", "lastName", "country", "age"};
 
     /**
      * Выполняет парсинг csv файла в список объектов класса Employee
