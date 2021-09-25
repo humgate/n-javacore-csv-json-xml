@@ -2,6 +2,10 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
+        /*
+        * Задача 1: CSV - JSON парсер
+        */
+
         //парсим csv в список employee
         List<Employee> list = EmployeeCSVParser.parseCSV("data.csv");
 
