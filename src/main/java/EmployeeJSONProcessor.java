@@ -10,7 +10,7 @@ import java.util.List;
 public class EmployeeJSONProcessor {
 
     /**
-     * Конвертирует список объектов в строку json
+     * Конвертирует список объектов типа Employee в строку json
      *
      * @param list список объектов
      * @return json
