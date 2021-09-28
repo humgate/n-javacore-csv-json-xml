@@ -35,6 +35,8 @@ public class Main {
 
             //пишем в фaйл
             EmployeeJSONProcessor.writeJsonToFile(json, "data2.json");
+        } else {
+            System.out.println("XML parsing failed.");
         }
     }
 }
