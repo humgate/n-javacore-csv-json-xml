@@ -1,3 +1,6 @@
+/**
+ * Описывает сущность сотрудник
+ */
 public class Employee {
     public long id;
     public String firstName;

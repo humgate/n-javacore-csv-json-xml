@@ -10,7 +10,7 @@ public class Main {
         List<Employee> list = EmployeeCSVParser.parseCSV("data.csv");
 
         if (list != null) { //если не упали при парсинге и список не пустой
-            System.out.println("CSV parsed successfully:");
+            System.out.println("CSV parsed successfully");
         } else {
             System.out.println("CSV parsing failed.");
             return;
@@ -18,9 +18,23 @@ public class Main {
 
         //конвертируем список employee в json
         String json = EmployeeJSONProcessor.listToJson(list);
-        System.out.println(json);
 
         //пишем в фaйл
         EmployeeJSONProcessor.writeJsonToFile(json, "data.json");
+
+        /*
+         * Задача 2: XML - JSON парсер
+         */
+
+        List<Employee> employeeList = EmployeeXMLParser.employeeParseXML("data.xml");
+        if (employeeList != null) {
+
+            System.out.println("XML parsed successfully");
+            //конвертируем список employee в json
+            json = EmployeeJSONProcessor.listToJson(employeeList);
+
+            //пишем в фaйл
+            EmployeeJSONProcessor.writeJsonToFile(json, "data2.json");
+        }
     }
 }
