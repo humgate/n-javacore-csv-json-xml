@@ -10,7 +10,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Парсит XML файл с данными сотрудников в список объектов Empoloyee
+ * Содержит методы для чтения xml файла и парсинга xml файла в список объектов
+ * класса Employee
  */
 public class EmployeeXMLParser {
     /**
