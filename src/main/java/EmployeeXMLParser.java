@@ -63,9 +63,9 @@ public class EmployeeXMLParser {
                             element.getElementsByTagName("firstName").item(0).getTextContent();
                     employee.lastName =
                             element.getElementsByTagName("lastName").item(0).getTextContent();
-                    employee.lastName =
+                    employee.country =
                             element.getElementsByTagName("country").item(0).getTextContent();
-                    employee.id =
+                    employee.age =
                             Integer.parseInt(element.getElementsByTagName("age").item(0).getTextContent());
 
                     emplist.add(employee);
