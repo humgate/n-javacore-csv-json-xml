@@ -2,14 +2,13 @@ import org.junit.Test;
 import org.junit.jupiter.api.Assertions;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class EmployeeJSONProcessorTest {
     /*
      * Проверка конвертации списка Employee в json
      */
     @Test
-    public void testCorrectSCVParse() {
+    public void testListToJson() {
         //given
         ArrayList<Employee> requiredList = new ArrayList<>();
         requiredList.add(new Employee(1,"John","Smith","USA",25));
