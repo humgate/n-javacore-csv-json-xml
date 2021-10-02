@@ -22,7 +22,7 @@ public class EmployeeXMLParserTest {
     }
 
     /*
-     * Проверка прасинга корректного xml с точки зрения класса Employee
+     * Проверка парсинга корректного xml с точки зрения класса Employee
      */
     @ParameterizedTest
     @ValueSource(strings = {"src/test/dataTest2.xml"})

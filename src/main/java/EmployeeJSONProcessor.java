@@ -8,7 +8,6 @@ import java.lang.reflect.Type;
 import java.util.List;
 
 public class EmployeeJSONProcessor {
-
     /**
      * Конвертирует список объектов типа Employee в строку json
      *
@@ -36,6 +35,5 @@ public class EmployeeJSONProcessor {
         } catch (IOException ex) {
             System.out.println(ex.getMessage());
         }
-
     }
 }
