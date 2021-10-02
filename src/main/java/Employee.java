@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 /**
  * Описывает сущность сотрудник
  */
@@ -24,5 +26,23 @@ public class Employee {
         this.lastName = lastName;
         this.country = country;
         this.age = age;
+    }
+
+    /*
+     * Переопределяем для того, чтобы удобно было тестировать объекты на равенство
+     */
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Employee employee = (Employee) o;
+        return id == employee.id && age == employee.age && Objects.equals(firstName, employee.firstName) && Objects.equals(lastName, employee.lastName) && Objects.equals(country, employee.country);
+    }
+    /*
+     * Переопределяем потому что переопределили equals
+     */
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, firstName, lastName, country, age);
     }
 }
