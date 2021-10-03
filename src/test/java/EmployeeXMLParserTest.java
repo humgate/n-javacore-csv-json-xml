@@ -11,7 +11,7 @@ public class EmployeeXMLParserTest {
      */
     @ParameterizedTest
     @ValueSource(strings = {"src/test/missing.xml", "src/test/dataTest1.xml"})
-    void testInvalidSCVParse(String argument) {
+    void testInvalidXMLParse(String argument) {
         //given
         //when
         List<Employee> staff = EmployeeXMLParser.employeeParseXML(argument);
